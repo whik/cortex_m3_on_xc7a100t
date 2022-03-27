@@ -1,0 +1,14 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               16M
+Start Address      0x00000000
+End Address        0x00FFFFFF
+Checksum           0xEE94DD52
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                                                                                  Checksum
+0x00000000    0x001210E7    Mar 27 15:42:42 2022    D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_hdl.bit    0x0193B46A
+File Checksum Total                                                                                                                          0x0193B46A

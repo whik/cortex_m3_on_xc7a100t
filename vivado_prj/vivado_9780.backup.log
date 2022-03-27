@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Mar 22 21:56:57 2022
+# Process ID: 9780
+# Current directory: D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17924 D:\fpga_study\ARM\cortex_m3_on_xc7a100t\vivado_prj\vivado_prj.xpr
+# Log file: D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado.log
+# Journal file: D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/fpga_study/ARM/cortex_m3_on_xc7a100t/cm3_core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/program/Vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 815.695 ; gain = 181.016
+open_bd_design {D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd}
+Adding cell -- Arm.com:CortexM:CORTEXM3_AXI:1.1 - CORTEXM3_AXI_0
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding cell -- xilinx.com:module_ref:swdio_tri_buffer:1.0 - swdio_tri_buffer_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /CORTEXM3_AXI_0/SYSRESETREQ(undef) and /proc_sys_reset_0/mb_debug_sys_rst(rst)
+Successfully read diagram <cm3_core> from BD file <D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd>
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 22 22:17:00 2022...

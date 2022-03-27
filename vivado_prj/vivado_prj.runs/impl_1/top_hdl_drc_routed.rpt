@@ -1,0 +1,205 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Mar 27 15:42:19 2022
+| Host         : LAPTOP-MNJIK6F2 running 64-bit major release  (build 9200)
+| Command      : report_drc -file top_hdl_drc_routed.rpt -pb top_hdl_drc_routed.pb -rpx top_hdl_drc_routed.rpx
+| Design       : top_hdl
+| Device       : xc7a100tfgg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 33
++-----------+----------+----------------------------+------------+
+| Rule      | Severity | Description                | Violations |
++-----------+----------+----------------------------+------------+
+| CHECK-3   | Warning  | Report rule limit reached  | 1          |
+| DPIP-1    | Warning  | Input pipelining           | 6          |
+| DPOP-1    | Warning  | PREG Output pipelining     | 3          |
+| DPOP-2    | Warning  | MREG Output pipelining     | 3          |
+| REQP-1839 | Warning  | RAMB36 async control check | 20         |
++-----------+----------+----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CHECK-3#1 Warning
+Report rule limit reached  
+REQP-1839 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_alu/u_cm3_dpu_alu_dp/mul_res_ex input cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_alu/u_cm3_dpu_alu_dp/mul_res_ex/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_alu/u_cm3_dpu_alu_dp/mul_res_ex input cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_alu/u_cm3_dpu_alu_dp/mul_res_ex/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_alu/u_cm3_dpu_alu_dp/mul_res_ex__0 input cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_alu/u_cm3_dpu_alu_dp/mul_res_ex__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_alu/u_cm3_dpu_alu_dp/mul_res_ex__0 input cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_alu/u_cm3_dpu_alu_dp/mul_res_ex__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_alu/u_cm3_dpu_alu_dp/mul_res_ex__1 input cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_alu/u_cm3_dpu_alu_dp/mul_res_ex__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_alu/u_cm3_dpu_alu_dp/mul_res_ex__1 input cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_alu/u_cm3_dpu_alu_dp/mul_res_ex__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_alu/u_cm3_dpu_alu_dp/mul_res_ex output cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_alu/u_cm3_dpu_alu_dp/mul_res_ex/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_alu/u_cm3_dpu_alu_dp/mul_res_ex__0 output cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_alu/u_cm3_dpu_alu_dp/mul_res_ex__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_alu/u_cm3_dpu_alu_dp/mul_res_ex__1 output cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_alu/u_cm3_dpu_alu_dp/mul_res_ex__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_alu/u_cm3_dpu_alu_dp/mul_res_ex multiplier stage cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_alu/u_cm3_dpu_alu_dp/mul_res_ex/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_alu/u_cm3_dpu_alu_dp/mul_res_ex__0 multiplier stage cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_alu/u_cm3_dpu_alu_dp/mul_res_ex__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_alu/u_cm3_dpu_alu_dp/mul_res_ex__1 multiplier stage cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_alu/u_cm3_dpu_alu_dp/mul_res_ex__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0 has an input control pin cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0/ADDRARDADDR[14] (net: cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[13]) which is driven by a register (cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_bus_matrix/u_cm3_mtx_bit_master/bm_icore_to_sys_valid_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0 has an input control pin cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0/ADDRARDADDR[14] (net: cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[13]) which is driven by a register (cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_bus_matrix/u_cm3_mtx_bit_master/bm_master_sel_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0 has an input control pin cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0/ADDRARDADDR[14] (net: cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[13]) which is driven by a register (cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_bus_matrix/u_cm3_mtx_bit_master/bm_master_sel_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0 has an input control pin cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0/ADDRARDADDR[14] (net: cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[13]) which is driven by a register (cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_bus_matrix/u_cm3_mtx_bit_master/bm_master_sel_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0 has an input control pin cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0/ADDRARDADDR[14] (net: cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[13]) which is driven by a register (cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_bus_matrix/u_cm3_mtx_bit_master/bm_slave_sel_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0 has an input control pin cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0/ADDRARDADDR[14] (net: cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[13]) which is driven by a register (cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_bus_matrix/u_cm3_mtx_bit_master/bm_slave_sel_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0 has an input control pin cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0/ADDRARDADDR[14] (net: cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[13]) which is driven by a register (cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_bus_matrix/u_cm3_mtx_bit_master/bm_state_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0 has an input control pin cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0/ADDRARDADDR[14] (net: cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[13]) which is driven by a register (cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_bus_matrix/u_cm3_mtx_bit_master/bm_state_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0 has an input control pin cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0/ADDRARDADDR[14] (net: cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[13]) which is driven by a register (cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_bus_matrix/u_cm3_mtx_bit_master/bm_state_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0 has an input control pin cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0/ADDRARDADDR[14] (net: cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[13]) which is driven by a register (cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_bus_matrix/u_cm3_mtx_bit_master/bm_state_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0 has an input control pin cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0/ADDRARDADDR[14] (net: cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[13]) which is driven by a register (cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_bus_matrix/u_cm3_mtx_bit_master/suppress_buff_write_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0 has an input control pin cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0/ADDRARDADDR[14] (net: cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[13]) which is driven by a register (cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_bus_matrix/u_cm3_mtx_bit_master/unalign_2nd_lookup_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#13 Warning
+RAMB36 async control check  
+The RAMB36E1 cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0 has an input control pin cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0/ADDRARDADDR[14] (net: cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[13]) which is driven by a register (cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_bus_matrix/u_cm3_mtx_bit_master/unalign_cancel_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#14 Warning
+RAMB36 async control check  
+The RAMB36E1 cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0 has an input control pin cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0/ADDRARDADDR[14] (net: cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[13]) which is driven by a register (cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_bus_matrix/u_cm3_mtx_decode_dap/dap_to_dcode_accept_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#15 Warning
+RAMB36 async control check  
+The RAMB36E1 cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0 has an input control pin cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0/ADDRARDADDR[14] (net: cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[13]) which is driven by a register (cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_bus_matrix/u_cm3_mtx_decode_dap/dap_to_ppb_accept_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#16 Warning
+RAMB36 async control check  
+The RAMB36E1 cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0 has an input control pin cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0/ADDRARDADDR[14] (net: cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[13]) which is driven by a register (cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_bus_matrix/u_cm3_mtx_decode_dcore/dcore_to_dcode_accept_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#17 Warning
+RAMB36 async control check  
+The RAMB36E1 cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0 has an input control pin cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0/ADDRARDADDR[14] (net: cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[13]) which is driven by a register (cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_bus_matrix/u_cm3_mtx_decode_dcore/dcore_to_ppb_accept_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#18 Warning
+RAMB36 async control check  
+The RAMB36E1 cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0 has an input control pin cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0/ADDRARDADDR[14] (net: cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[13]) which is driven by a register (cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_bus_matrix/u_cm3_mtx_input_stage_dcore/buffered_write_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#19 Warning
+RAMB36 async control check  
+The RAMB36E1 cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0 has an input control pin cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0/ADDRARDADDR[14] (net: cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[13]) which is driven by a register (cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_bus_matrix/u_cm3_mtx_input_stage_dcore/buffered_write_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#20 Warning
+RAMB36 async control check  
+The RAMB36E1 cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0 has an input control pin cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0_0/ADDRARDADDR[14] (net: cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[13]) which is driven by a register (cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_bus_matrix/u_cm3_mtx_input_stage_dcore/mpu_canceld_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+

@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Mar 27 15:53:13 2022
+# Process ID: 24376
+# Current directory: D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6236 D:\fpga_study\ARM\cortex_m3_on_xc7a100t\vivado_prj\vivado_prj.xpr
+# Log file: D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado.log
+# Journal file: D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.xpr
+update_compile_order -fileset sources_1
+write_cfgmem  -format mcs -size 16 -interface SPIx4 -loadbit {up 0x00000000 "D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_hdl.bit" } -checksum -force -disablebitswap -file "D:/fpga_study/ARM/cortex_m3_on_xc7a100t/flash/flash_50m.mcs"
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_hdl.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7a100t_0] -mem_dev [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.FILES [list "D:/fpga_study/ARM/cortex_m3_on_xc7a100t/flash/flash_50m.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.PRM_FILE {D:/fpga_study/ARM/cortex_m3_on_xc7a100t/flash/flash_50m.prm} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.CHECKSUM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a100t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a100t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0];
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+endgroup
+open_bd_design {D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd}
+write_bd_layout -format pdf -orientation portrait D:/fpga_study/ARM/cortex_m3_on_xc7a100t/flash/cm3_core.pdf
+close_project

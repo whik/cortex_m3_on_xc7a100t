@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="cm3_core_swdio_tri_buffer_0_0_synth_1" LaunchDir="D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/cm3_core_swdio_tri_buffer_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Mar 20 13:46:27 2022
+# Process ID: 39804
+# Current directory: D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/cm3_core_axi_gpio_0_1_synth_1
+# Command line: vivado.exe -log cm3_core_axi_gpio_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cm3_core_axi_gpio_0_1.tcl
+# Log file: D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/cm3_core_axi_gpio_0_1_synth_1/cm3_core_axi_gpio_0_1.vds
+# Journal file: D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/cm3_core_axi_gpio_0_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source cm3_core_axi_gpio_0_1.tcl -notrace

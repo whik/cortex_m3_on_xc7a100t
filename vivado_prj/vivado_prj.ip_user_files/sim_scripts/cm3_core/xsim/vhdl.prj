@@ -1,0 +1,6 @@
+vhdl xil_defaultlib  \
+"../../../bd/cm3_core/ip/cm3_core_proc_sys_reset_0_0/sim/cm3_core_proc_sys_reset_0_0.vhd" \
+"../../../bd/cm3_core/ip/cm3_core_axi_gpio_0_1/sim/cm3_core_axi_gpio_0_1.vhd" \
+"../../../bd/cm3_core/ip/cm3_core_axi_uartlite_0_0/sim/cm3_core_axi_uartlite_0_0.vhd" \
+
+nosort

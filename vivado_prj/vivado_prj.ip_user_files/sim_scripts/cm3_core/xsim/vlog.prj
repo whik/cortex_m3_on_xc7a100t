@@ -1,0 +1,33 @@
+verilog xil_defaultlib --include "../../../../../bd/cm3_core/ipshared/ea75/rtl" --include "../../../../../bd/cm3_core/ipshared/85a3" --include "../../../../../bd/cm3_core/ipshared/ec67/hdl" \
+"../../../bd/cm3_core/ipshared/ea75/rtl/cm3_dap_ahb_ap.v" \
+"../../../bd/cm3_core/ipshared/ea75/rtl/cm3_wic.v" \
+"../../../bd/cm3_core/ipshared/ea75/rtl/cm3_nvic.v" \
+"../../../bd/cm3_core/ipshared/ea75/rtl/cm3_dwt.v" \
+"../../../bd/cm3_core/ipshared/ea75/rtl/AhbToAxi.v" \
+"../../../bd/cm3_core/ipshared/ea75/rtl/cm3_mpu.v" \
+"../../../bd/cm3_core/ipshared/ea75/rtl/cm3_bus_matrix.v" \
+"../../../bd/cm3_core/ipshared/ea75/rtl/models.v" \
+"../../../bd/cm3_core/ipshared/ea75/rtl/cmsdk.v" \
+"../../../bd/cm3_core/ipshared/ea75/rtl/cm3_tpiu.v" \
+"../../../bd/cm3_core/ipshared/ea75/rtl/dapswjdp.v" \
+"../../../bd/cm3_core/ipshared/ea75/rtl/cm3_fpb.v" \
+"../../../bd/cm3_core/ipshared/ea75/rtl/cm3_dpu.v" \
+"../../../bd/cm3_core/ipshared/ea75/rtl/cm3_itm.v" \
+"../../../bd/cm3_core/ipshared/ea75/rtl/cm3_etm.v" \
+"../../../bd/cm3_core/ipshared/ea75/rtl/cortexm3.v" \
+"../../../bd/cm3_core/ipshared/ea75/rtl/cortexm3_integration.v" \
+"../../../bd/cm3_core/ip/cm3_core_CORTEXM3_AXI_0_0/sim/cm3_core_CORTEXM3_AXI_0_0.v" \
+"../../../bd/cm3_core/ip/cm3_core_clk_wiz_0_0/cm3_core_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/cm3_core/ip/cm3_core_clk_wiz_0_0/cm3_core_clk_wiz_0_0.v" \
+"../../../bd/cm3_core/ip/cm3_core_xbar_0/sim/cm3_core_xbar_0.v" \
+"../../../bd/cm3_core/ip/cm3_core_util_vector_logic_0_0/sim/cm3_core_util_vector_logic_0_0.v" \
+"../../../bd/cm3_core/ip/cm3_core_xlconstant_0_0/sim/cm3_core_xlconstant_0_0.v" \
+"../../../bd/cm3_core/ip/cm3_core_xlconstant_0_1/sim/cm3_core_xlconstant_0_1.v" \
+"../../../bd/cm3_core/ip/cm3_core_xlconstant_1_0/sim/cm3_core_xlconstant_1_0.v" \
+"../../../bd/cm3_core/sim/cm3_core.v" \
+"../../../bd/cm3_core/ip/cm3_core_swdio_tri_buffer_0_0/sim/cm3_core_swdio_tri_buffer_0_0.v" \
+"../../../bd/cm3_core/ip/cm3_core_auto_pc_0/sim/cm3_core_auto_pc_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

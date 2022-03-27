@@ -1,0 +1,207 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Mar 27 14:07:27 2022
+# Process ID: 11904
+# Current directory: D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3020 D:\fpga_study\ARM\cortex_m3_on_xc7a100t\vivado_prj\vivado_prj.xpr
+# Log file: D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado.log
+# Journal file: D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/fpga_study/ARM/cortex_m3_on_xc7a100t/cm3_core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/program/Vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 826.574 ; gain = 212.469
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd]
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tfgg484-1
+Top: top_hdl
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1449.793 ; gain = 52.547
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_hdl' [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/rtl/top_hdl.v:14]
+INFO: [Synth 8-6157] synthesizing module 'cm3_core_wrapper' [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/hdl/cm3_core_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'cm3_core' [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/synth/cm3_core.v:13]
+INFO: [Synth 8-6157] synthesizing module 'cm3_core_CORTEXM3_AXI_0_0' [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/.Xil/Vivado-11904-LAPTOP-MNJIK6F2/realtime/cm3_core_CORTEXM3_AXI_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cm3_core_CORTEXM3_AXI_0_0' (1#1) [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/.Xil/Vivado-11904-LAPTOP-MNJIK6F2/realtime/cm3_core_CORTEXM3_AXI_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'CORTEXM3_AXI_0' of module 'cm3_core_CORTEXM3_AXI_0_0' requires 85 connections, but only 54 given [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/synth/cm3_core.v:125]
+INFO: [Synth 8-6157] synthesizing module 'cm3_core_axi_gpio_0_1' [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/.Xil/Vivado-11904-LAPTOP-MNJIK6F2/realtime/cm3_core_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cm3_core_axi_gpio_0_1' (2#1) [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/.Xil/Vivado-11904-LAPTOP-MNJIK6F2/realtime/cm3_core_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cm3_core_axi_interconnect_0_0' [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/synth/cm3_core.v:328]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_WCSOSO' [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/synth/cm3_core.v:838]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_WCSOSO' (3#1) [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/synth/cm3_core.v:838]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_178BK2X' [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/synth/cm3_core.v:970]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_178BK2X' (4#1) [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/synth/cm3_core.v:970]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_13AR556' [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/synth/cm3_core.v:1102]
+INFO: [Synth 8-6157] synthesizing module 'cm3_core_auto_pc_0' [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/.Xil/Vivado-11904-LAPTOP-MNJIK6F2/realtime/cm3_core_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cm3_core_auto_pc_0' (5#1) [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/.Xil/Vivado-11904-LAPTOP-MNJIK6F2/realtime/cm3_core_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_13AR556' (6#1) [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/synth/cm3_core.v:1102]
+INFO: [Synth 8-6157] synthesizing module 'cm3_core_xbar_0' [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/.Xil/Vivado-11904-LAPTOP-MNJIK6F2/realtime/cm3_core_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cm3_core_xbar_0' (7#1) [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/.Xil/Vivado-11904-LAPTOP-MNJIK6F2/realtime/cm3_core_xbar_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'xbar' of module 'cm3_core_xbar_0' requires 40 connections, but only 38 given [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/synth/cm3_core.v:797]
+INFO: [Synth 8-6155] done synthesizing module 'cm3_core_axi_interconnect_0_0' (8#1) [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/synth/cm3_core.v:328]
+INFO: [Synth 8-6157] synthesizing module 'cm3_core_axi_uartlite_0_0' [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/.Xil/Vivado-11904-LAPTOP-MNJIK6F2/realtime/cm3_core_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cm3_core_axi_uartlite_0_0' (9#1) [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/.Xil/Vivado-11904-LAPTOP-MNJIK6F2/realtime/cm3_core_axi_uartlite_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_uartlite_0' of module 'cm3_core_axi_uartlite_0_0' requires 22 connections, but only 21 given [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/synth/cm3_core.v:276]
+INFO: [Synth 8-6157] synthesizing module 'cm3_core_clk_wiz_0_0' [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/.Xil/Vivado-11904-LAPTOP-MNJIK6F2/realtime/cm3_core_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'cm3_core_clk_wiz_0_0' (10#1) [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/.Xil/Vivado-11904-LAPTOP-MNJIK6F2/realtime/cm3_core_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'cm3_core_proc_sys_reset_0_0' [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/.Xil/Vivado-11904-LAPTOP-MNJIK6F2/realtime/cm3_core_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cm3_core_proc_sys_reset_0_0' (11#1) [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/.Xil/Vivado-11904-LAPTOP-MNJIK6F2/realtime/cm3_core_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'proc_sys_reset_0' of module 'cm3_core_proc_sys_reset_0_0' requires 10 connections, but only 8 given [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/synth/cm3_core.v:303]
+INFO: [Synth 8-6157] synthesizing module 'cm3_core_swdio_tri_buffer_0_0' [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/.Xil/Vivado-11904-LAPTOP-MNJIK6F2/realtime/cm3_core_swdio_tri_buffer_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cm3_core_swdio_tri_buffer_0_0' (12#1) [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/.Xil/Vivado-11904-LAPTOP-MNJIK6F2/realtime/cm3_core_swdio_tri_buffer_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cm3_core_util_vector_logic_0_0' [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/.Xil/Vivado-11904-LAPTOP-MNJIK6F2/realtime/cm3_core_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cm3_core_util_vector_logic_0_0' (13#1) [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/.Xil/Vivado-11904-LAPTOP-MNJIK6F2/realtime/cm3_core_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cm3_core_xlconstant_0_0' [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_xlconstant_0_0/synth/cm3_core_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_5_xlconstant' [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1 - type: integer 
+	Parameter CONST_WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_5_xlconstant' (14#1) [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'cm3_core_xlconstant_0_0' (15#1) [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_xlconstant_0_0/synth/cm3_core_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'cm3_core_xlconstant_0_1' [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_xlconstant_0_1/synth/cm3_core_xlconstant_0_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_5_xlconstant__parameterized0' [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 0 - type: integer 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_5_xlconstant__parameterized0' (15#1) [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'cm3_core_xlconstant_0_1' (16#1) [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_xlconstant_0_1/synth/cm3_core_xlconstant_0_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'cm3_core_xlconstant_1_0' [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_xlconstant_1_0/synth/cm3_core_xlconstant_1_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'cm3_core_xlconstant_1_0' (17#1) [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_xlconstant_1_0/synth/cm3_core_xlconstant_1_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'cm3_core' (18#1) [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/synth/cm3_core.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'cm3_core_wrapper' (19#1) [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/hdl/cm3_core_wrapper.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'top_hdl' (20#1) [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/rtl/top_hdl.v:14]
+WARNING: [Synth 8-3331] design s00_couplers_imp_13AR556 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_13AR556 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_178BK2X has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_178BK2X has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_178BK2X has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_178BK2X has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_WCSOSO has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_WCSOSO has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_WCSOSO has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_WCSOSO has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design cm3_core_axi_interconnect_0_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design cm3_core_axi_interconnect_0_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design cm3_core_axi_interconnect_0_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design cm3_core_axi_interconnect_0_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design cm3_core_axi_interconnect_0_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design cm3_core_axi_interconnect_0_0 has unconnected port S00_ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1494.074 ; gain = 96.828
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1494.074 ; gain = 96.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1494.074 ; gain = 96.828
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_CORTEXM3_AXI_0_0/cm3_core_CORTEXM3_AXI_0_0.dcp' for cell 'cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_axi_gpio_0_1/cm3_core_axi_gpio_0_1.dcp' for cell 'cm3_core_wrapper_ut0/cm3_core_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_axi_uartlite_0_0/cm3_core_axi_uartlite_0_0.dcp' for cell 'cm3_core_wrapper_ut0/cm3_core_i/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_clk_wiz_0_0/cm3_core_clk_wiz_0_0.dcp' for cell 'cm3_core_wrapper_ut0/cm3_core_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_proc_sys_reset_0_0/cm3_core_proc_sys_reset_0_0.dcp' for cell 'cm3_core_wrapper_ut0/cm3_core_i/proc_sys_reset_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_swdio_tri_buffer_0_0/cm3_core_swdio_tri_buffer_0_0.dcp' for cell 'cm3_core_wrapper_ut0/cm3_core_i/swdio_tri_buffer_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_util_vector_logic_0_0/cm3_core_util_vector_logic_0_0.dcp' for cell 'cm3_core_wrapper_ut0/cm3_core_i/util_vector_logic_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_xbar_0/cm3_core_xbar_0.dcp' for cell 'cm3_core_wrapper_ut0/cm3_core_i/axi_interconnect_0/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'd:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_auto_pc_0/cm3_core_auto_pc_0.dcp' for cell 'cm3_core_wrapper_ut0/cm3_core_i/axi_interconnect_0/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 500 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 7 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 5 OBUFs to IO ports without IO buffers.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'cm3_core_wrapper_ut0/cm3_core_i/swdio_tri_buffer_0/swd_i' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'cm3_core_wrapper_ut0/cm3_core_i/swdio_tri_buffer_0/swd_i' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'cm3_core_wrapper_ut0/cm3_core_i/swdio_tri_buffer_0/swd_i' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'cm3_core_wrapper_ut0/cm3_core_i/swdio_tri_buffer_0/swd_o' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'cm3_core_wrapper_ut0/cm3_core_i/swdio_tri_buffer_0/swd_o' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'cm3_core_wrapper_ut0/cm3_core_i/swdio_tri_buffer_0/swd_o' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_CORTEXM3_AXI_0_0/cm3_core_CORTEXM3_AXI_0_0.xdc] for cell 'cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst'
+Finished Parsing XDC File [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_CORTEXM3_AXI_0_0/cm3_core_CORTEXM3_AXI_0_0.xdc] for cell 'cm3_core_wrapper_ut0/cm3_core_i/CORTEXM3_AXI_0/inst'
+Parsing XDC File [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_clk_wiz_0_0/cm3_core_clk_wiz_0_0_board.xdc] for cell 'cm3_core_wrapper_ut0/cm3_core_i/clk_wiz_0/inst'
+Finished Parsing XDC File [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_clk_wiz_0_0/cm3_core_clk_wiz_0_0_board.xdc] for cell 'cm3_core_wrapper_ut0/cm3_core_i/clk_wiz_0/inst'
+Parsing XDC File [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_clk_wiz_0_0/cm3_core_clk_wiz_0_0.xdc] for cell 'cm3_core_wrapper_ut0/cm3_core_i/clk_wiz_0/inst'
+Finished Parsing XDC File [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_clk_wiz_0_0/cm3_core_clk_wiz_0_0.xdc] for cell 'cm3_core_wrapper_ut0/cm3_core_i/clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_clk_wiz_0_0/cm3_core_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_hdl_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_hdl_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_proc_sys_reset_0_0/cm3_core_proc_sys_reset_0_0_board.xdc] for cell 'cm3_core_wrapper_ut0/cm3_core_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_proc_sys_reset_0_0/cm3_core_proc_sys_reset_0_0_board.xdc] for cell 'cm3_core_wrapper_ut0/cm3_core_i/proc_sys_reset_0/U0'
+Parsing XDC File [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_proc_sys_reset_0_0/cm3_core_proc_sys_reset_0_0.xdc] for cell 'cm3_core_wrapper_ut0/cm3_core_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_proc_sys_reset_0_0/cm3_core_proc_sys_reset_0_0.xdc] for cell 'cm3_core_wrapper_ut0/cm3_core_i/proc_sys_reset_0/U0'
+Parsing XDC File [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_axi_gpio_0_1/cm3_core_axi_gpio_0_1_board.xdc] for cell 'cm3_core_wrapper_ut0/cm3_core_i/axi_gpio_0/U0'
+Finished Parsing XDC File [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_axi_gpio_0_1/cm3_core_axi_gpio_0_1_board.xdc] for cell 'cm3_core_wrapper_ut0/cm3_core_i/axi_gpio_0/U0'
+Parsing XDC File [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_axi_gpio_0_1/cm3_core_axi_gpio_0_1.xdc] for cell 'cm3_core_wrapper_ut0/cm3_core_i/axi_gpio_0/U0'
+Finished Parsing XDC File [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_axi_gpio_0_1/cm3_core_axi_gpio_0_1.xdc] for cell 'cm3_core_wrapper_ut0/cm3_core_i/axi_gpio_0/U0'
+Parsing XDC File [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_axi_uartlite_0_0/cm3_core_axi_uartlite_0_0_board.xdc] for cell 'cm3_core_wrapper_ut0/cm3_core_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_axi_uartlite_0_0/cm3_core_axi_uartlite_0_0_board.xdc] for cell 'cm3_core_wrapper_ut0/cm3_core_i/axi_uartlite_0/U0'
+Parsing XDC File [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_axi_uartlite_0_0/cm3_core_axi_uartlite_0_0.xdc] for cell 'cm3_core_wrapper_ut0/cm3_core_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_axi_uartlite_0_0/cm3_core_axi_uartlite_0_0.xdc] for cell 'cm3_core_wrapper_ut0/cm3_core_i/axi_uartlite_0/U0'
+INFO: [Timing 38-2] Deriving generated clocks
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1502.938 ; gain = 0.000
+Parsing XDC File [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/xdc/top_hdl.xdc]
+Finished Parsing XDC File [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/xdc/top_hdl.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1502.938 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:33 ; elapsed = 00:00:23 . Memory (MB): peak = 1502.938 ; gain = 105.691
+62 Infos, 26 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:25 . Memory (MB): peak = 1502.938 ; gain = 105.691
+update_compile_order -fileset sources_1
+open_bd_design {D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd}
+Adding cell -- Arm.com:CortexM:CORTEXM3_AXI:1.1 - CORTEXM3_AXI_0
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding cell -- xilinx.com:module_ref:swdio_tri_buffer:1.0 - swdio_tri_buffer_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /CORTEXM3_AXI_0/SYSRESETREQ(undef) and /proc_sys_reset_0/mb_debug_sys_rst(rst)
+Successfully read diagram <cm3_core> from BD file <D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd>
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+ERROR: [Labtools 27-3419] Disconnecting from hw_server since it's not responding to requests.  It is recommended to investigate hw_server to find any issues.

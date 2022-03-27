@@ -1,0 +1,299 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 11904
+License: Customer
+
+Current time: 	Sun Mar 27 14:07:38 CST 2022
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 89 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/program/Vivado/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/program/Vivado/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	w'hi'k
+User home directory: C:/Users/w'hi'k
+User working directory: D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/program/Vivado/Vivado
+HDI_APPROOT: D:/program/Vivado/Vivado/2018.3
+RDI_DATADIR: D:/program/Vivado/Vivado/2018.3/data
+RDI_BINDIR: D:/program/Vivado/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/w'hi'k/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/w'hi'k/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/w'hi'k/AppData/Roaming/Xilinx/Vivado/2018.3/layouts/
+PlanAhead jar file location: 	D:/program/Vivado/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado.log
+Vivado journal file location: 	D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado.jou
+Engine tmp dir: 	D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/.Xil/Vivado-11904-LAPTOP-MNJIK6F2
+
+Xilinx Environment Variables
+----------------------------
+NO_XILINX_DATA_LICENSE: HIDDEN
+XILINX: D:/program/Vivado/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/program/Vivado/Vivado/2018.3/ids_lite/ISE
+XILINX_EDK: D:\program\Xilinx\14.7\ISE_DS\EDK
+XILINX_PLANAHEAD: D:/program/Vivado/Vivado/2018.3
+XILINX_SDK: D:/program/Vivado/SDK/2018.3
+XILINX_VIVADO: D:/program/Vivado/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/program/Vivado/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 696 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 102 MB (+104527kb) [00:00:05]
+// [Engine Memory]: 571 MB (+447404kb) [00:00:05]
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: D:\fpga_study\ARM\cortex_m3_on_xc7a100t\vivado_prj\vivado_prj.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 738 MB. GUI used memory: 46 MB. Current time: 3/27/22, 2:07:40 PM CST
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 761 MB (+169230kb) [00:00:10]
+// [Engine Memory]: 807 MB (+7673kb) [00:00:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  2346 ms.
+// Tcl Message: open_project D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/fpga_study/ARM/cortex_m3_on_xc7a100t/cm3_core'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/program/Vivado/Vivado/2018.3/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 826.574 ; gain = 212.469 
+// Project name: vivado_prj; location: D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj; part: xc7a100tfgg484-1
+// [Engine Memory]: 1,099 MB (+264525kb) [00:00:13]
+// [GUI Memory]: 108 MB (+668kb) [00:00:13]
+dismissDialog("Open Project"); // bx (cp)
+// [GUI Memory]: 115 MB (+1435kb) [00:00:15]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// bx (cp):  Open Elaborated Design : addNotify
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd] 
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tfgg484-1 Top: top_hdl 
+// TclEventType: ELABORATE_START
+// HMemoryUtils.trashcanNow. Engine heap size: 1,336 MB. GUI used memory: 58 MB. Current time: 3/27/22, 2:07:56 PM CST
+// [Engine Memory]: 1,336 MB (+190954kb) [00:00:25]
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,336 MB. GUI used memory: 56 MB. Current time: 3/27/22, 2:08:11 PM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 1,433 MB (+31690kb) [00:00:41]
+// [GUI Memory]: 131 MB (+11414kb) [00:00:41]
+// Package: addNotify
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  3212 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1449.793 ; gain = 52.547 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'cm3_core_axi_interconnect_0_0' (8#1) [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/synth/cm3_core.v:328] INFO: [Synth 8-6157] synthesizing module 'cm3_core_axi_uartlite_0_0' [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/.Xil/Vivado-11904-LAPTOP-MNJIK6F2/realtime/cm3_core_axi_uartlite_0_0_stub.v:6] INFO: [Synth 8-6155] done synthesizing module 'cm3_core_axi_uartlite_0_0' (9#1) [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/.Xil/Vivado-11904-LAPTOP-MNJIK6F2/realtime/cm3_core_axi_uartlite_0_0_stub.v:6] 
+// Tcl Message: 	Parameter CONST_VAL bound to: 1 - type: integer  	Parameter CONST_WIDTH bound to: 2 - type: integer  
+// Tcl Message: 	Parameter CONST_VAL bound to: 0 - type: integer  	Parameter CONST_WIDTH bound to: 1 - type: integer  
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1494.074 ; gain = 96.828 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1494.074 ; gain = 96.828 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1494.074 ; gain = 96.828 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_clk_wiz_0_0/cm3_core_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_hdl_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/top_hdl_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: INFO: [Timing 38-2] Deriving generated clocks 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1502.938 ; gain = 0.000 
+// Tcl Message: Parsing XDC File [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/xdc/top_hdl.xdc] Finished Parsing XDC File [D:/fpga_study/ARM/cortex_m3_on_xc7a100t/xdc/top_hdl.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1502.938 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 1 instances were transformed.   IOBUF => IOBUF (IBUF, OBUFT): 1 instances  
+// Elapsed time: 25 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:33 ; elapsed = 00:00:23 . Memory (MB): peak = 1502.938 ; gain = 105.691 
+// Tcl Message: 62 Infos, 26 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:25 . Memory (MB): peak = 1502.938 ; gain = 105.691 
+// [GUI Memory]: 147 MB (+10054kb) [00:00:44]
+// 'dQ' command handler elapsed time: 26 seconds
+dismissDialog("Open Elaborated Design"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bx (cp):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd} 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: Successfully read diagram <cm3_core> from BD file <D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd> 
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+dismissDialog("Open Block Design"); // bx (cp)
+floatView(PAResourceOtoP.PAViews_SYSTEM, "Diagram"); // ax (aI, cp)
+// PAResourceOtoP.PAViews_SYSTEM: System: float view
+maximizeFrame(PAResourceOtoP.PAViews_SYSTEM, "Diagram"); // ax (aI, aK)
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B (f, aK)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B (f, aK)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// [GUI Memory]: 162 MB (+7169kb) [00:00:56]
+// Tcl Message: regenerate_bd_layout 
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B (f, aK)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectButton(PAResourceCommand.PACommandNames_ZOOM_FIT, "System_zoom_fit"); // B (f, aK)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_FIT
+// Elapsed time: 366 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aI (aF, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_hdl (top_hdl.v)]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_hdl (top_hdl.v), cm3_core_wrapper_ut0 : cm3_core_wrapper (cm3_core_wrapper.v)]", 2, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_hdl (top_hdl.v), cm3_core_wrapper_ut0 : cm3_core_wrapper (cm3_core_wrapper.v), cm3_core_i : cm3_core (cm3_core.bd)]", 3, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_hdl (top_hdl.v), cm3_core_wrapper_ut0 : cm3_core_wrapper (cm3_core_wrapper.v), cm3_core_i : cm3_core (cm3_core.bd)]", 3, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,504 MB. GUI used memory: 95 MB. Current time: 3/27/22, 2:38:16 PM CST
+// Elapsed time: 1652 seconds
+dockFrame(PAResourceOtoP.PAViews_SYSTEM, "Diagram"); // ax (aI, aK)
+maximizeFrame(PAResourceOtoP.PAViews_SYSTEM, "Diagram"); // ax (aI, aK)
+// PAResourceOtoP.PAViews_SYSTEM: System: dock view
+// Elapsed time: 897 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 24, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cQ, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (cp):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.3   **** Build date : Dec  7 2018-00:40:27     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// Elapsed time: 52 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (bx)
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bx)
+// Tcl Message: ERROR: [Labtools 27-3419] Disconnecting from hw_server since it's not responding to requests.  It is recommended to investigate hw_server to find any issues. 

@@ -1,0 +1,113 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Mar 27 14:58:43 2022
+# Process ID: 22040
+# Current directory: D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22316 D:\fpga_study\ARM\cortex_m3_on_xc7a100t\vivado_prj\vivado_prj.xpr
+# Log file: D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado.log
+# Journal file: D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_hdl.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7a100t_0] -mem_dev [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_hdl.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_hdl.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/fpga_study/ARM/cm3_base_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/fpga_study/ARM/cm3_base_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/fpga_study/ARM/cm3_base_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_hdl.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/fpga_study/ARM/arm_m3_base_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_hdl.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+open_bd_design {D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd}
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {70} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {20.125} CONFIG.MMCM_CLKOUT0_DIVIDE_F {14.375} CONFIG.CLKOUT1_JITTER {174.966} CONFIG.CLKOUT1_PHASE_ERROR {163.922}] [get_bd_cells clk_wiz_0]
+endgroup
+save_bd_design
+validate_bd_design
+generate_target all [get_files  D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd]
+catch { config_ip_cache -export [get_ips -all cm3_core_clk_wiz_0_0] }
+catch { config_ip_cache -export [get_ips -all cm3_core_proc_sys_reset_0_0] }
+catch { config_ip_cache -export [get_ips -all cm3_core_xbar_0] }
+catch { config_ip_cache -export [get_ips -all cm3_core_axi_uartlite_0_0] }
+catch { config_ip_cache -export [get_ips -all cm3_core_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd]
+export_simulation -of_objects [get_files D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd] -directory D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.ip_user_files/sim_scripts -ip_user_files_dir D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.ip_user_files -ipstatic_source_dir D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.cache/compile_simlib/modelsim} {questa=D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.cache/compile_simlib/questa} {riviera=D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.cache/compile_simlib/riviera} {activehdl=D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd] -top
+make_wrapper -files [get_files D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_hdl.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+open_bd_design {D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd}
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {100} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {20.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {10.000} CONFIG.CLKOUT1_JITTER {162.035} CONFIG.CLKOUT1_PHASE_ERROR {164.985}] [get_bd_cells clk_wiz_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {50} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT0_DIVIDE_F {20.000} CONFIG.CLKOUT1_JITTER {192.113}] [get_bd_cells clk_wiz_0]
+endgroup
+save_bd_design
+generate_target all [get_files  D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd]
+catch { config_ip_cache -export [get_ips -all cm3_core_clk_wiz_0_0] }
+catch { config_ip_cache -export [get_ips -all cm3_core_proc_sys_reset_0_0] }
+catch { config_ip_cache -export [get_ips -all cm3_core_xbar_0] }
+catch { config_ip_cache -export [get_ips -all cm3_core_axi_uartlite_0_0] }
+catch { config_ip_cache -export [get_ips -all cm3_core_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd]
+export_simulation -of_objects [get_files D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd] -directory D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.ip_user_files/sim_scripts -ip_user_files_dir D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.ip_user_files -ipstatic_source_dir D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.cache/compile_simlib/modelsim} {questa=D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.cache/compile_simlib/questa} {riviera=D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.cache/compile_simlib/riviera} {activehdl=D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_hdl.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+open_bd_design {D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd}
+startgroup
+endgroup

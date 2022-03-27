@@ -1,0 +1,110 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Mar 27 15:53:13 2022
+# Process ID: 24376
+# Current directory: D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6236 D:\fpga_study\ARM\cortex_m3_on_xc7a100t\vivado_prj\vivado_prj.xpr
+# Log file: D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado.log
+# Journal file: D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/fpga_study/ARM/cortex_m3_on_xc7a100t/cm3_core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/program/Vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 843.914 ; gain = 216.387
+update_compile_order -fileset sources_1
+write_cfgmem  -format mcs -size 16 -interface SPIx4 -loadbit {up 0x00000000 "D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_hdl.bit" } -checksum -force -disablebitswap -file "D:/fpga_study/ARM/cortex_m3_on_xc7a100t/flash/flash_50m.mcs"
+Command: write_cfgmem -format mcs -size 16 -interface SPIx4 -loadbit {up 0x00000000 "D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_hdl.bit" } -checksum -force -disablebitswap -file D:/fpga_study/ARM/cortex_m3_on_xc7a100t/flash/flash_50m.mcs
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_hdl.bit
+Writing file D:/fpga_study/ARM/cortex_m3_on_xc7a100t/flash/flash_50m.mcs
+Writing log file D:/fpga_study/ARM/cortex_m3_on_xc7a100t/flash/flash_50m.prm
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               16M
+Start Address      0x00000000
+End Address        0x00FFFFFF
+Checksum           0xEE94DD52
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                                                                                  Checksum
+0x00000000    0x001210E7    Mar 27 15:42:42 2022    D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_hdl.bit    0x0193B46A
+File Checksum Total                                                                                                                          0x0193B46A
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+set_property PROGRAM.FILE {D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_hdl.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+create_hw_cfgmem -hw_device [get_hw_devices xc7a100t_0] -mem_dev [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.FILES [list "D:/fpga_study/ARM/cortex_m3_on_xc7a100t/flash/flash_50m.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.PRM_FILE {D:/fpga_study/ARM/cortex_m3_on_xc7a100t/flash/flash_50m.prm} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.CHECKSUM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a100t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a100t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0];
+INFO: [Labtools 27-3164] End of startup status: HIGH
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s).
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+Mfg ID : 20   Memory Type : ba   Memory Capacity : 18   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+Performing Checksum Operation...
+ Addr1      Addr2       Checksum
+ 00000000   001210E7    0193B46A
+ Device Checksum Total  0193B46A
+Checksum Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:01 ; elapsed = 00:01:13 . Memory (MB): peak = 2486.492 ; gain = 0.000
+endgroup
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
+open_bd_design {D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd}
+Adding cell -- Arm.com:CortexM:CORTEXM3_AXI:1.1 - CORTEXM3_AXI_0
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding cell -- xilinx.com:module_ref:swdio_tri_buffer:1.0 - swdio_tri_buffer_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /CORTEXM3_AXI_0/SYSRESETREQ(undef) and /proc_sys_reset_0/mb_debug_sys_rst(rst)
+Successfully read diagram <cm3_core> from BD file <D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd>
+write_bd_layout -format pdf -orientation portrait D:/fpga_study/ARM/cortex_m3_on_xc7a100t/flash/cm3_core.pdf
+D:/fpga_study/ARM/cortex_m3_on_xc7a100t/flash/cm3_core.pdf
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 27 15:56:48 2022...

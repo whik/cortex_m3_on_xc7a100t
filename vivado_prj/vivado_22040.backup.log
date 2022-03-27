@@ -1,0 +1,247 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Mar 27 14:58:43 2022
+# Process ID: 22040
+# Current directory: D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22316 D:\fpga_study\ARM\cortex_m3_on_xc7a100t\vivado_prj\vivado_prj.xpr
+# Log file: D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado.log
+# Journal file: D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/fpga_study/ARM/cortex_m3_on_xc7a100t/cm3_core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/program/Vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 830.414 ; gain = 191.207
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn1" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn1jsn-DLC9LP-00000000000000" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+set_property PROGRAM.FILE {D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_hdl.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+create_hw_cfgmem -hw_device [get_hw_devices xc7a100t_0] -mem_dev [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_hdl.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_hdl.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/fpga_study/ARM/cm3_base_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/fpga_study/ARM/cm3_base_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/fpga_study/ARM/cm3_base_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_hdl.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/fpga_study/ARM/arm_m3_base_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_hdl.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd}
+Adding cell -- Arm.com:CortexM:CORTEXM3_AXI:1.1 - CORTEXM3_AXI_0
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding cell -- xilinx.com:module_ref:swdio_tri_buffer:1.0 - swdio_tri_buffer_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /CORTEXM3_AXI_0/SYSRESETREQ(undef) and /proc_sys_reset_0/mb_debug_sys_rst(rst)
+Successfully read diagram <cm3_core> from BD file <D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd>
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {70} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {20.125} CONFIG.MMCM_CLKOUT0_DIVIDE_F {14.375} CONFIG.CLKOUT1_JITTER {174.966} CONFIG.CLKOUT1_PHASE_ERROR {163.922}] [get_bd_cells clk_wiz_0]
+endgroup
+save_bd_design
+Wrote  : <D:\fpga_study\ARM\cortex_m3_on_xc7a100t\bd\cm3_core\cm3_core.bd> 
+Wrote  : <D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ui/bd_5d92db35.ui> 
+validate_bd_design
+WARNING: [Arm.com:CortexM:CORTEXM3_AXI:1.1-4] /CORTEXM3_AXI_0: Could not determine interrupt input port type - using default interrupt type Rising Edge. Please change this manually if necessary.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_pc/S_AXI(0) and /CORTEXM3_AXI_0/CM3_SYS_AXI3(1)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_pc/S_AXI(0) and /CORTEXM3_AXI_0/CM3_SYS_AXI3(1)
+generate_target all [get_files  D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd]
+INFO: [BD 41-1662] The design 'cm3_core.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <D:\fpga_study\ARM\cortex_m3_on_xc7a100t\bd\cm3_core\cm3_core.bd> 
+VHDL Output written to : D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/synth/cm3_core.v
+VHDL Output written to : D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/sim/cm3_core.v
+VHDL Output written to : D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/hdl/cm3_core_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block CORTEXM3_AXI_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block swdio_tri_buffer_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_auto_pc_0/cm3_core_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+INFO: [HWH 41-1378] This design does not contain any "MEMORY" mapped segment for processor CORTEXM3_AXI_0
+Exporting to file D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/hw_handoff/cm3_core.hwh
+Generated Block Design Tcl file D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/hw_handoff/cm3_core_bd.tcl
+Generated Hardware Definition File D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/synth/cm3_core.hwdef
+catch { config_ip_cache -export [get_ips -all cm3_core_clk_wiz_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP cm3_core_clk_wiz_0_0, cache-ID = b5dcf37a9d3d3991; cache size = 26.031 MB.
+catch { config_ip_cache -export [get_ips -all cm3_core_proc_sys_reset_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP cm3_core_proc_sys_reset_0_0, cache-ID = 3880da592d2c9416; cache size = 26.031 MB.
+catch { config_ip_cache -export [get_ips -all cm3_core_xbar_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP cm3_core_xbar_0, cache-ID = 2cde7432d65a9646; cache size = 26.031 MB.
+catch { config_ip_cache -export [get_ips -all cm3_core_axi_uartlite_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP cm3_core_axi_uartlite_0_0, cache-ID = e0740e42b2eb5429; cache size = 26.031 MB.
+catch { config_ip_cache -export [get_ips -all cm3_core_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP cm3_core_auto_pc_0, cache-ID = 4debbc8bd198e010; cache size = 26.031 MB.
+export_ip_user_files -of_objects [get_files D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd]
+export_simulation -of_objects [get_files D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd] -directory D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.ip_user_files/sim_scripts -ip_user_files_dir D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.ip_user_files -ipstatic_source_dir D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.cache/compile_simlib/modelsim} {questa=D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.cache/compile_simlib/questa} {riviera=D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.cache/compile_simlib/riviera} {activehdl=D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd] -top
+make_wrapper -files [get_files D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Mar 27 15:17:49 2022] Launched synth_1...
+Run output will be captured here: D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/synth_1/runme.log
+[Sun Mar 27 15:17:49 2022] Launched impl_1...
+Run output will be captured here: D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_hdl.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd}
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {100} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {20.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {10.000} CONFIG.CLKOUT1_JITTER {162.035} CONFIG.CLKOUT1_PHASE_ERROR {164.985}] [get_bd_cells clk_wiz_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {50} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT0_DIVIDE_F {20.000} CONFIG.CLKOUT1_JITTER {192.113}] [get_bd_cells clk_wiz_0]
+endgroup
+save_bd_design
+Wrote  : <D:\fpga_study\ARM\cortex_m3_on_xc7a100t\bd\cm3_core\cm3_core.bd> 
+generate_target all [get_files  D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd]
+WARNING: [Arm.com:CortexM:CORTEXM3_AXI:1.1-4] /CORTEXM3_AXI_0: Could not determine interrupt input port type - using default interrupt type Rising Edge. Please change this manually if necessary.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_pc/S_AXI(0) and /CORTEXM3_AXI_0/CM3_SYS_AXI3(1)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_pc/S_AXI(0) and /CORTEXM3_AXI_0/CM3_SYS_AXI3(1)
+Wrote  : <D:\fpga_study\ARM\cortex_m3_on_xc7a100t\bd\cm3_core\cm3_core.bd> 
+VHDL Output written to : D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/synth/cm3_core.v
+VHDL Output written to : D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/sim/cm3_core.v
+VHDL Output written to : D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/hdl/cm3_core_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block CORTEXM3_AXI_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block swdio_tri_buffer_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/ip/cm3_core_auto_pc_0/cm3_core_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+INFO: [HWH 41-1378] This design does not contain any "MEMORY" mapped segment for processor CORTEXM3_AXI_0
+Exporting to file D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/hw_handoff/cm3_core.hwh
+Generated Block Design Tcl file D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/hw_handoff/cm3_core_bd.tcl
+Generated Hardware Definition File D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/synth/cm3_core.hwdef
+catch { config_ip_cache -export [get_ips -all cm3_core_clk_wiz_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP cm3_core_clk_wiz_0_0, cache-ID = f34dad032301cdab; cache size = 26.031 MB.
+catch { config_ip_cache -export [get_ips -all cm3_core_proc_sys_reset_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP cm3_core_proc_sys_reset_0_0, cache-ID = b2c92882e5fefc51; cache size = 26.031 MB.
+catch { config_ip_cache -export [get_ips -all cm3_core_xbar_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP cm3_core_xbar_0, cache-ID = 51e1b0181b96d91a; cache size = 26.031 MB.
+catch { config_ip_cache -export [get_ips -all cm3_core_axi_uartlite_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP cm3_core_axi_uartlite_0_0, cache-ID = 268f35c9960debf1; cache size = 26.031 MB.
+catch { config_ip_cache -export [get_ips -all cm3_core_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP cm3_core_auto_pc_0, cache-ID = 24d03f44129a1551; cache size = 26.031 MB.
+export_ip_user_files -of_objects [get_files D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd]
+export_simulation -of_objects [get_files D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd] -directory D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.ip_user_files/sim_scripts -ip_user_files_dir D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.ip_user_files -ipstatic_source_dir D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.cache/compile_simlib/modelsim} {questa=D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.cache/compile_simlib/questa} {riviera=D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.cache/compile_simlib/riviera} {activehdl=D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Mar 27 15:36:29 2022] Launched synth_1...
+Run output will be captured here: D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/synth_1/runme.log
+[Sun Mar 27 15:36:29 2022] Launched impl_1...
+Run output will be captured here: D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/fpga_study/ARM/cortex_m3_on_xc7a100t/vivado_prj/vivado_prj.runs/impl_1/top_hdl.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {D:/fpga_study/ARM/cortex_m3_on_xc7a100t/bd/cm3_core/cm3_core.bd}
+startgroup
+endgroup
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 27 15:51:58 2022...
